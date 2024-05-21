@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTD-Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">Vào cửa hàng trên ứng dụng
+                            DTD-Shop
+                        <div class="header__qr">
+                            <img src="./assets/img/myQR.png" alt="QR code" class="header__qr-img">
+                        </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo</a>
+                                <div class="header__notify">
+                                    <header class="header__notify-header">
+                                        <h3>Thông báo mới nhận</h3>
+                                    </header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-item .header__notify-item--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="./assets/img/laprap1.jfif" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Đồ chơi lắp ráp</span>
+                                                    <span class="header__notify-description">Mô tả</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <a href="" class="header__notify-link">
+                                                <img src="./assets/img/laprap1.jfif" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Đồ chơi lắp ráp</span>
+                                                    <span class="header__notify-description">Mô tả</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <a href="" class="header__notify-link">
+                                                <img src="./assets/img/laprap1.jfif" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Đồ chơi lắp ráp</span>
+                                                    <span class="header__notify-description">Mô tả</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <footer class="header__notify-footer">
+                                        <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                    </footer>
+                                </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                    </ul>
+                </nav>
+
+                <!-- SEARCH -->
+                <div class="header-with-search">
+                   <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong shop</span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active ">
+                                    <span>Trong shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <!-- Cart -->
+                   <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+
+                            <div class="header__cart-list header__cart-list--no-cart">
+                                <img src="./assets/img/empty_cart.png" alt="" class="header__cart-no-cart-img">
+                                <p class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </p>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Đồ chơi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Điện tử</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Mỹ phẩm</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="grid__column-10">
+                        <div class="home-product">
+                            <div class="gid__row">
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://www.mykingdom.com.vn/cdn/shop/products/lego-60316_1.jpg?v=1685054509);">
+                                            <h4 class="home-product-item__name">Đồ chơi lắp ráp Lego Trạm cảnh sát thành phố Lego City</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">250.000đ</span>
+                                                <span class="home-product-item__price-current">200.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like">
+                                                    <i class="far fa-heart">
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">8 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Lego</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>                                               
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__sale-off-percent">10%</span>
+                                                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>                          
+                            
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://www.mykingdom.com.vn/cdn/shop/products/lego-60316_1.jpg?v=1685054509);">
+                                            <h4 class="home-product-item__name">Đồ chơi lắp ráp Lego Trạm cảnh sát thành phố Lego City</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">250.000đ</span>
+                                                <span class="home-product-item__price-current">200.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like">
+                                                    <i class="far fa-heart">
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">8 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Lego</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>                                               
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__sale-off-percent">10%</span>
+                                                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> 
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://www.mykingdom.com.vn/cdn/shop/products/lego-60316_1.jpg?v=1685054509);">
+                                            <h4 class="home-product-item__name">Đồ chơi lắp ráp Lego Trạm cảnh sát thành phố Lego City</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">250.000đ</span>
+                                                <span class="home-product-item__price-current">200.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like">
+                                                    <i class="far fa-heart">
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">8 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Lego</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>                                               
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__sale-off-percent">10%</span>
+                                                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> 
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://www.mykingdom.com.vn/cdn/shop/products/lego-60316_1.jpg?v=1685054509);">
+                                            <h4 class="home-product-item__name">Đồ chơi lắp ráp Lego Trạm cảnh sát thành phố Lego City</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">250.000đ</span>
+                                                <span class="home-product-item__price-current">200.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like">
+                                                    <i class="far fa-heart">
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">8 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Lego</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>                                               
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__sale-off-percent">10%</span>
+                                                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> 
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://www.mykingdom.com.vn/cdn/shop/products/lego-60316_1.jpg?v=1685054509);">
+                                            <h4 class="home-product-item__name">Đồ chơi lắp ráp Lego Trạm cảnh sát thành phố Lego City</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">250.000đ</span>
+                                                <span class="home-product-item__price-current">200.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like">
+                                                    <i class="far fa-heart">
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">8 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Lego</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>                                               
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__sale-off-percent">10%</span>
+                                                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>  
+
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">9</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">DTD-Shop</a>
+                            </li>
+                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-facebook"></i>
+                                    Facebook</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-instagram"></i>
+                                    Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Đồ chơi</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điện tử</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Mỹ phẩm</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/myQR.png" alt="Download QR" class="footer__download-qr">
+                        </div>
+                    </div>
+                </div> 
+            </div>  
+
+            <div class="footer__bottom">
+               <div class="grid">         
+                    <p class="footer__text">2024 - Bản quyền của DTD-Shop</p>            
+               </div>
+            </div> 
+        </footer>
+    </div>
+
+    <!-- modal -->
+    <!-- <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body">         -->
+                 <!-- Register -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+    
+                       
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng ký, bạn đã đồng ý với DTD-Shop về
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a> 
+    
+                            </p>
+                        </div>
+    
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                        </a> 
+                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-title">Kết nối với Google</span>
+                        </a> 
+
+                    </div>
+                </div> -->
+
+                <!-- Login -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng ký</span>
+                        </div>
+    
+                       
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                    
+                        </div>
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp</a>                                
+                            </div>
+                        </div>
+    
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                        </a> 
+                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-title">Kết nối với Google</span>
+                        </a> 
+
+                    </div>
+                </div>
+        </div>
+    </div> -->
+</body>
+
+</html>
